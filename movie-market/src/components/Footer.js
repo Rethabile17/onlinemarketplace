@@ -5,7 +5,8 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"; 
+} from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";  
 import logo from "../assests/logo.png";
 import "./Footer.css";
 
@@ -13,16 +14,28 @@ function Footer() {
   return (
     <div className="footer">
       <div className="top-footer">
-        <img src={logo} className="footer-img" alt="logo of the hotel" />
-        <p>kimberley,8301,</p>
-        <p>South African</p>
+      <div className="footer-top"></div>
+        <img src={logo} className="footer-img" alt="logo of the movie" />
+        
+        
+        <div className="footer-address">
+          <p>kimberley, 8301</p>
+          <p>South Africa</p>
+        </div>
+
+        <div className="footer-copyright">
+          <FontAwesomeIcon icon={faCopyright} />
+          <span>All rights reserved 2024</span>
+        </div>
+
         <div className="footer-links">
           <a href="#">Home</a>
           <a href="#">Movies</a>
           <a href="#">About</a>
         </div>
-        <div className="contact-container">
-          <h1 className="contact-header">Contact</h1>
+
+        <div className="footer-contact-container">
+          <h1 className="footer-contact-header">Contact</h1>
           <p>+27 68 342 3344</p>
           <p>Akiramovies@gmail.com</p>
           <div className="social-icons">
@@ -55,8 +68,9 @@ function Footer() {
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
           </div>
+          
+          <p className="footer-terms">Terms & Condition</p>
         </div>
-       
       </div>
     </div>
   );

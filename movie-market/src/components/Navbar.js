@@ -29,14 +29,7 @@ const Nav = () => {
         >
           About
         </li>
-        <li
-          className={activeItem === 'Services' ? 'active' : ''}
-          onClick={() =>{
-
-           handleMenuClick('Services')}}
-        >
-          Services
-        </li>
+      
         <li
           className={activeItem === 'Contact' ? 'active' : ''}
           onClick={() =>{

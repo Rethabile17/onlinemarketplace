@@ -29,7 +29,7 @@ function Login() {
       return;
     }
 
-    setErrorMessage(""); // Clear any previous errors
+    setErrorMessage(""); 
     await handleSignUp();
   };
 
@@ -40,7 +40,12 @@ function Login() {
         password,
       });
       console.log('Sign Up Successful:', response.data);
-      navigate("/home"); // Navigate to the login page after successful registration
+      if(email == 'adminpro@gmail.com'){
+        navigate("/admin")
+      } else {
+       navigate("/home");   
+      }
+     
     } catch (error) {
       if (error.response) {
         setErrorMessage(error.response.data);
@@ -51,6 +56,15 @@ function Login() {
       }
     }
   };
+
+
+   
+const handleForgot =() =>{
+  navigate('/Forgot')
+}
+
+
+ 
 
   return (
     <div className="Register">

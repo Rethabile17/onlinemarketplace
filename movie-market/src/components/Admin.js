@@ -20,7 +20,7 @@ function Admin() {
 
   const handleAddMovie = async () => {
     try {
-      const response = await axios.post('https://backendmarket-h7xu.onrender.com/addMovie', {
+      const response = await axios.post('http://localhost:5001/api/addMovie', {
         movieName,
       director,
       price,

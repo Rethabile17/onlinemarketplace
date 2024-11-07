@@ -2,7 +2,7 @@ const express =  require ("express");
 const router = express.Router();
 const {addMovie, deleteMovie, getMovies, updateMovie  }  =  require('../controllers/db')
 
-router.post('/addMovie' , addMovie ,addMovie )
+router.post('/addMovie' , addMovie )
 
 router.delete('/deleteMovie/:id' , deleteMovie)
 

@@ -31,7 +31,7 @@ function Register() {
       return;
     }
 
-    setErrorMessage(""); // Clear any previous errors
+    setErrorMessage(""); 
     await handleSignUp();
   };
 
@@ -44,7 +44,7 @@ function Register() {
         lastName,
       });
       console.log('Sign Up Successful:', response.data);
-      navigate("/"); // Navigate to the login page after successful registration
+      navigate("/");  
     } catch (error) {
       if (error.response) {
         setErrorMessage(error.response.data);
