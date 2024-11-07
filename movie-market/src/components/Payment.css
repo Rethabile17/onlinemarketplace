@@ -1,0 +1,98 @@
+
+.checkout {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-page {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .checkout-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .checkout-page p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  
+  select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 200px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+  p {
+    color: #f44336;
+    font-size: 16px;
+  }
+  
+  
+  #paypal-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #paypal-button {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    color: #007bff;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .checkout {
+      padding: 15px;
+    }
+  
+    .checkout-page h2 {
+      font-size: 20px;
+    }
+  
+    .checkout-page p {
+      font-size: 16px;
+    }
+  
+    select {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  

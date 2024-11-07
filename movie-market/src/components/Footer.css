@@ -1,0 +1,37 @@
+.footer{
+    background-color: #201719;
+    width: 100%;
+    color: white;
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+}
+
+
+.top-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    aspect-ratio: 1/.5;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+a{
+    font-size: 1.25rem;
+    margin: 0 .2rem;
+}
+a:hover{
+    color: gold;
+}

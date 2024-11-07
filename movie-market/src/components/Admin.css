@@ -1,0 +1,179 @@
+.admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #201719;
+  width: 100%;
+  min-height: 100vh;
+  color: #333;
+  padding: 1rem;
+}
+
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.admin-head {
+  text-align: center;
+  color: #666;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.admin-input {
+  display: grid;
+  grid-template-columns: repeat( minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-input input,
+.admin-input textarea {
+  padding: 0.75rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: #fafafa;
+  color: #333;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.admin-button-body {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.admin-button {
+  color: #ffffff;
+  background-color: #666;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+.admin-button:hover {
+  background-color: #4d4d4d;
+}
+
+.bookings-list {
+  margin-top: 2rem;
+  border-top: 2px solid #666;
+  padding-top: 1rem;
+  overflow-x: auto;
+}
+
+.bookings-list h2 {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #333;
+}
+
+th, td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #666;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+td {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+tr:hover {
+  background-color: #e8f5e9;
+}
+
+.toggle-view-button,
+.logout-button {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.toggle-view-button:hover,
+.logout-button:hover {
+  background-color: #3b5998;
+}
+
+.logout-button {
+  background-color: #555;
+  margin: 1rem 0;
+}
+
+.logout-button:focus,
+.toggle-view-button:focus {
+  outline: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+  .admin-head {
+    font-size: 1.8rem;
+  }
+
+  .admin-input {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-button {
+    padding: 0.8rem 1rem;
+  }
+
+  .toggle-view-button,
+  .logout-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-head {
+    font-size: 1.6rem;
+  }
+
+  .admin-page {
+    padding: 1rem;
+  }
+}

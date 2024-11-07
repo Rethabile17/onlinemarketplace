@@ -1,0 +1,41 @@
+.hero {
+    background-image: url('../assests/money-fantasy-scene.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    width: 100%;
+}
+.hero::before {
+    content: '';
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 1;
+}
+.hero-content {
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+}
+.hero-content h1 {
+    font-size: 2rem;
+    max-width: 80%;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+.btn-hero{
+    width: 5rem;
+    height: 2rem;
+    background-color: white;
+    border: none;
+    color:black;
+}

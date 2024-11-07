@@ -1,0 +1,63 @@
+.Register{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.Register-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 40%;
+    max-width: 500px;
+    padding: 50px 50px;
+  }
+  
+  .Register-modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Register-head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .Register-error-message{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  input{
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  
+button{
+    padding: 10px;
+    margin: 0 auto;
+    width: 60%;  
+}
+
+.Register-Logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}

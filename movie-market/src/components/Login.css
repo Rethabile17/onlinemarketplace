@@ -1,0 +1,63 @@
+.Login{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.Login-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 40%;
+    max-width: 500px;
+    padding: 50px 50px;
+  }
+  
+  .Login-modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Login-head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .Login-error-message{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  input{
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  
+button{
+    padding: 10px;
+    margin: 0 auto;
+    width: 60%;  
+}
+
+.Login-Logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+}
